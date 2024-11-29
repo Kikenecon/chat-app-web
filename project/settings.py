@@ -83,9 +83,9 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "railway",
         "USER": "postgres",
-        "PASSWORD": "SZeVvAjwuBUTkJAbijEBnTJklUHysGUT",
-        "HOST": "autorack.proxy.rlwy.net",
-        "PORT": "28616",
+        "PASSWORD": "lJwctjSaNKHDITfDdIMHSWlTOsPJPbfF",
+        "HOST": "junction.proxy.rlwy.net",
+        "PORT": "45151",
     }
 
 }
@@ -124,6 +124,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "MEDIA")
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles") 
