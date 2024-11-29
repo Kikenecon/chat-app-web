@@ -55,7 +55,7 @@ def update_profile_picture(request, author_id):
 @api_view(["GET"])
 def get_author_by_username(request, username):
     try:
-        author = Author.objects.get_or_create(name=username)
+        author, _ = Author.objects.get_or_create(name=username)
     except Author.DoesNotExist:
         return Response(
             {
